@@ -16,7 +16,7 @@ def hamilton(coordinates, velocity):
     return np.array([0.5*(velocity[0][i]**2 + velocity[1][i]**2 + coordinates[:,0][i]**2 + coordinates[:,1][i]**2) + coordinates[:,0][i]**2*coordinates[:,1][i] - coordinates[:,1][i]**3/3 for i in range(len(coordinates))])
 
 def starting_points(hamilton, coordinates, velocity, e):
-    ndition = []
+    condition = []
     for point in range(len(hamilton)):
         if hamilton[point] < e:
             condition += [np.array([0, velocity[0][point], coordinates[:,1][point],   velocity[1][point]])]

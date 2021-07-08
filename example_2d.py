@@ -25,7 +25,7 @@ plt.xlabel("x")
 plt.ylabel("y")
 plt.title("data")
 plt.savefig("data.png")
-plt.close()
+plt.clf()
 
 #plotting takens theorem
 plt.plot(takens[:,0], takens[:,1])
@@ -33,7 +33,7 @@ plt.xlabel("y")
 plt.ylabel("y + 1")
 plt.title("takens")
 plt.savefig("takens.png")
-plt.close()
+plt.clf()
 
 #plotting y vs. py
 for integral in integrals:
@@ -42,7 +42,7 @@ for integral in integrals:
 plt.xlabel("y")
 plt.ylabel("py")
 plt.savefig("y_py.png")
-plt.close()
+plt.clf()
 
 #ploting x vs. y
 for integral in integrals:
@@ -50,7 +50,7 @@ for integral in integrals:
 plt.xlabel("x")
 plt.ylabel("y")
 plt.savefig("x_y.png")
-plt.close()
+plt.clf()
 
 #plotting x vs. y vs. py
 fig = plt.figure()
